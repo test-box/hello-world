@@ -1,0 +1,25 @@
+git config --global user.name "Bla Box"
+git config --global user.email bla.box@bk.ru
+
+git config --list
+
+$ git help <глагол>
+$ git <глагол> --help
+$ man git-<глагол>
+
+cd /d/onedrive/github/test-box/hello-world
+
+
+# Lists the files in your .ssh directory, if they exist
+ls -al ~/.ssh
+
+# Start the ssh-agent in the background
+eval $(ssh-agent -s)
+
+# Add your SSH private key to the ssh-agent
+ssh-add ~/.ssh/text-box_blabox_id_rsa
+
+# Testing your SSH connection
+# fingerprint is SHA256:nThbg6kXUpJWGl7E1IGOCspRomTxdCARLviKw6E5SY8
+# fingerprint is 16:27:ac:a5:76:28:2d:36:63:1b:56:4d:eb:df:a6:48
+ssh -T git@github.com
